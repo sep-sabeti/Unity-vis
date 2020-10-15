@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{2053AA52-9BD7-9711-81A1-353CE4BF990B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/scatterplot.cs">
+    <Files>
+      <File FileName="Assets/scripts/scatterplot.cs" Line="35" Column="27" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Assignment 1" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="scripts" expanded="True">
+                <Node name="scatterplot.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="422fe52a-4de8-43d0-a332-2f7aac2edec5" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
