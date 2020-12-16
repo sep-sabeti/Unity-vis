@@ -118,6 +118,7 @@ public class LoadData : MonoBehaviour
                         sphere.GetComponent<Renderer>().material.color = Color.gray;
                     }
 
+
                     if (p.GetComponent<Renderer>().material.color == Color.gray)
                     {
                         TextMesh text = GameObject.Find("Station Name").GetComponent<TextMesh>(); ;
@@ -140,12 +141,7 @@ public class LoadData : MonoBehaviour
 
                     }
 
-                    GameObject[] box = GameObject.FindGameObjectsWithTag("box");
-                    foreach (GameObject obj in box)
-                    {
-                        Destroy(obj);
 
-                    }
 
                     makeBoxPlot(selectedYear, selectedStation);
 
@@ -389,7 +385,13 @@ public class LoadData : MonoBehaviour
 
    
     public void makeBoxPlot(String selectedYear, String selectedStation)
+
     {
+        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("box"))
+        {
+            Destroy(obj);
+
+        }
         List<int> indices = new List<int>();
         if(selectedStation != null)
         {
@@ -501,7 +503,7 @@ public class LoadData : MonoBehaviour
             textbox4.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
 
         }
-        else if (int.Parse(selectedYear) == 2019)
+        if (int.Parse(selectedYear) == 2019)
         {
             List<float> tmax = new List<float>();
             List<float> tmin = new List<float>();
@@ -594,7 +596,7 @@ public class LoadData : MonoBehaviour
             textbox4.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
 
         }
-        else if (int.Parse(selectedYear) == 2018)
+         if (int.Parse(selectedYear) == 2018)
         {
             List<float> tmax = new List<float>();
             List<float> tmin = new List<float>();
@@ -687,7 +689,7 @@ public class LoadData : MonoBehaviour
             textbox4.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
 
         }
-        else if (int.Parse(selectedYear) == 2017)
+         if (int.Parse(selectedYear) == 2017)
         {
             List<float> tmax = new List<float>();
             List<float> tmin = new List<float>();
@@ -780,7 +782,7 @@ public class LoadData : MonoBehaviour
             textbox4.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
 
         }
-        else if (int.Parse(selectedYear) == 2016)
+         if (int.Parse(selectedYear) == 2016)
         {
             List<float> tmax = new List<float>();
             List<float> tmin = new List<float>();
@@ -873,7 +875,7 @@ public class LoadData : MonoBehaviour
             textbox4.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
 
         }
-        else if (int.Parse(selectedYear) == 2015)
+         if (int.Parse(selectedYear) == 2015)
         {
             List<float> tmax = new List<float>();
             List<float> tmin = new List<float>();
